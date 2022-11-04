@@ -16,14 +16,15 @@
     <div id="app">
         <img src="img/logo.png" alt="logo">
         <div class="input-aerea">
-            <input type="text" placeholder="New Task">
-            <button>AGGIUNGI TASK</button>
+            <input type="text" placeholder="New Task" v-model.trim="inputText">
+            <button @click="createTask">AGGIUNGI TASK</button>
             <p class="error">{{errorString}}</p>
         </div>
         <div class="lista">
             <ul>
                 <li>
                     <p v-for="todo in todos">{{ todo.text }}</p>
+                    <hr>
                 </li>
             </ul>
             <h3>Non ci sono task!</h3>
