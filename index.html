@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- COLLEGAMENTO CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- COLLEGAMENTO VUE -->
+    <script src="https://unpkg.com/vue@3"></script>
+    <link rel="stylesheet" href="">
+
+    <title>Vue Todolist</title>
+</head>
+<body>
+    <div id="app">
+        <img src="img/logo.png" alt="logo">
+        <div class="input-aerea">
+            <input type="text" placeholder="New Task">
+            <button>AGGIUNGI</button>
+        </div>
+        <div class="lista">
+            <ul>
+                <li>
+                    <p v-for="todo in todos">{{ todo.text }}</p>
+                </li>
+            </ul>
+            <h3>Non ci sono task!</h3>
+        </div>
+    </div>
+
+
+    <!-- COLLEGAMENTO JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>

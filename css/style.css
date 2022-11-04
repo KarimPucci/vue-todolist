@@ -1,0 +1,38 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+img{
+    width: 350px;
+    height: 80px;
+    position: relative;
+    left: 650px;
+    margin-top: 20px;
+}
+
+.input-aerea{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 30px;
+}
+.input-aerea button{
+    padding: 5px;
+    margin-left: 10px;
+    border-radius: 3px;
+}
+.input-aerea input{
+    width: 20%;
+    height: 30px;
+    border-radius: 3px;
+}
+
+.lista{
+    text-align: center;
+    margin-top: 50px;
+}
+.lista ul li p{
+    padding: 10px;
+}
