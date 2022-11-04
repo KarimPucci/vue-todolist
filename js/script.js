@@ -12,7 +12,4 @@ createApp ({
             ]
         }
     },
-    methods:{
-        
-    }
 }).mount('#app');
